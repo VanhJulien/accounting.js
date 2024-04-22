@@ -46,11 +46,9 @@ pipeline {
         }
 
         stage('Archive Artifact') {
-            post {
-                success {
+            steps {
                     archiveArtifacts 'accounting.js'
                 }
-            }
          }
     }
 }
