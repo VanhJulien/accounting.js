@@ -1,6 +1,6 @@
-# Pipeline Jenkins pour Projet XYZ
+# Pipeline Jenkins pour Projet accounting.js
 
-Ce document décrit le Pipeline Jenkins mis en place pour automatiser le processus de déploiement du projet XYZ. Le Jenkinsfile associé est utilisé pour définir les étapes du Pipeline.
+Ce document décrit le Pipeline Jenkins mis en place pour automatiser le processus de déploiement du projet accounting.js. Le Jenkinsfile associé est utilisé pour définir les étapes du Pipeline.
 
 ## Étapes du Pipeline
 
@@ -21,4 +21,4 @@ Ce document décrit le Pipeline Jenkins mis en place pour automatiser le process
 - Il est recommandé de résoudre les problèmes rencontrés avec les tests pour garantir la qualité du code.
 - Des améliorations futures pourraient inclure l'ajout de publications sur d'autres registries et l'optimisation du processus de déploiement.
 
-Ce Pipeline Jenkins vise à automatiser efficacement le processus de déploiement du projet XYZ, garantissant ainsi une livraison rapide et fiable des mises à jour.
+Ce Pipeline Jenkins vise à automatiser efficacement le processus de déploiement du projet accounting.js, garantissant ainsi une livraison rapide et fiable des mises à jour.
