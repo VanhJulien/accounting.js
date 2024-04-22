@@ -11,6 +11,8 @@ pipeline {
                 bat 'npm run build'
             }
         }
+
+        // Ne fonctionne pas, les tests ne passent pas
         // stage('Test') {
         //     steps {
         //         echo 'Installing dev dependencies for testing..'
@@ -20,30 +22,19 @@ pipeline {
         //         bat 'npm test'
         //     }
         // }
-        stage('Deploy') {
-            steps {
-                echo 'Deploying....'
-                // Ajoutez ici les étapes pour le déploiement si nécessaire
-            }
-        }
-        stage('Build Docker Image') {
-            steps {
-                echo 'Building Docker image...'
-                script {
-                    // Étape de construction de l'image Docker
-                    docker.build('accounting-image')
-                }
-            }
-        }
-        stage('Run Docker Container') {
-            steps {
-                echo 'Running Docker container...'
-                script {
-                    // Exécutez le conteneur Docker à partir de l'image construite
-                    docker.image('accounting-image').run()
-                }
-            }
-        }
+
+        // stage('Deploy') {
+        //     steps {
+        //         echo 'Deploying to npm...'
+        //         // Publication sur npm
+        //         script {
+        //             // Connexion à npm
+        //             bat 'npm login -u your-username -p your-password'
+        //             // Publication du package
+        //             bat 'npm publish'
+        //         }
+        //     }
+        // }
 
         stage('Archive Artifact') {
             steps {

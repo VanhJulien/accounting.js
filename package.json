@@ -35,7 +35,7 @@
 	},
 	"scripts": {
 		"test": "npm run test:jasmine && npm run test:qunit",
-		"test:jasmine": "jasmine tests.jasmine",
+		"test:jasmine": "jasmine tests/jasmine",
 		"test:qunit": "qunit tests/qunit",
 		"build": "uglifyjs accounting.js -o accounting.min.js"
 	}
