@@ -23,18 +23,20 @@ pipeline {
         //     }
         // }
 
-        // stage('Deploy') {
-        //     steps {
-        //         echo 'Deploying to npm...'
-        //         // Publication sur npm
-        //         script {
-        //             // Connexion à npm
-        //             bat 'npm login -u your-username -p your-password'
-        //             // Publication du package
-        //             bat 'npm publish'
-        //         }
-        //     }
-        // }
+
+        // Credentials à remplir
+        stage('Deploy') {
+            steps {
+                echo 'Deploying to npm...'
+                // Publication sur npm
+                script {
+                    // Connexion à npm
+                    bat 'npm login -u your-username -p your-password'
+                    // Publication du package
+                    bat 'npm publish'
+                }
+            }
+        }
 
         stage('Archive Artifact') {
             steps {
