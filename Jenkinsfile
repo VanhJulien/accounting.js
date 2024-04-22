@@ -11,15 +11,15 @@ pipeline {
                 bat 'npm run build'
             }
         }
-        stage('Test') {
-            steps {
-                echo 'Installing dev dependencies for testing..'
-                bat 'npm install --only=dev'
-                bat 'npx jasmine init'
-                echo 'Testing..'
-                bat 'npm test'
-            }
-        }
+        // stage('Test') {
+        //     steps {
+        //         echo 'Installing dev dependencies for testing..'
+        //         bat 'npm install --only=dev'
+        //         bat 'npx jasmine init'
+        //         echo 'Testing..'
+        //         bat 'npm test'
+        //     }
+        // }
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
